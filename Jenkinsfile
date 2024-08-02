@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.image('my-html-app').run('-d -p 8080:80')
+                    docker.image('my-html-app').run('-d -p 8081:80')
                 }
             }
         }
