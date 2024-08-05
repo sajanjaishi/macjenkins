@@ -23,6 +23,7 @@ pipeline {
             steps {
                 script {
                     docker.image('my-html-app').run('-d -p 8081:80')
+                    echo 'Deployed'
                 }
             }
         }
